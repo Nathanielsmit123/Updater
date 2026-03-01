@@ -28,7 +28,7 @@ print "   |".yellow
 print "       | ".yellow
 print "   _/_)_/__/_\n".cyan
 puts"\\----------/".yellow
-puts "Welcome to BitBodo!"
+puts "Welcome to BitBodo 0.2.0!"
 dir = " Home"
 loop do
     print "BitBodo#{dir}~> "
@@ -53,7 +53,9 @@ loop do
         system("mv Updater/'untitled folder 3'/text.rb bit.rb")
         system("rm boot.txt")
         system("mv Updater/'untitled folder 3'/boot.txt boot.txt")
-        system("rm -r Updater")
-        system("rm text.rb && mv bit.rb text.rb")
+        system("rmdir Updater/'untitled folder 3'")
+        system("rm Updater/README.md")
+        system("rmdir Updater")
+        system("rm text.rb && mv bit.rb text.rb && ruby text.rb")
     end
 end
