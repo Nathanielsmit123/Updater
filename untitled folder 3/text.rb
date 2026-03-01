@@ -49,6 +49,11 @@ loop do
         end
     end
     if message == "pkg update"
-        system("git clone ")
+        system("git clone https://github.com/Nathanielsmit123/Updater.git")
+        system("mv Updater/'untitled folder 3'/text.rb bit.rb")
+        system("rm boot.txt")
+        system("mv Updater/'untitled folder 3'/boot.txt boot.txt")
+        system("rm -r Updater")
+        system("rm text.rb && mv bit.rb text.rb")
     end
 end
